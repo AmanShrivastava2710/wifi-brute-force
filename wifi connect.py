@@ -62,25 +62,25 @@ displayAvailableNetworks()
 # input wifi name and password
 name = input("Name of Wi-Fi: ")
 
-password1= {1:'a',2:'b',3:'c',4:'d',5:'e',6:'f',7:'g',8:'h',9:'i',10:'j',11:'k',12:'l',13:'m',14:'n',15:'o',16:'p',17:'q',18:'r',19:'s',20:'t',21:'u',22:'v',23:'w',24:'x',25:'y',26:'z',27:'@',28:'9'}
+password1= {1:'a',2:'b',3:'c',4:'d',5:'e',6:'f',7:'g',8:'h',9:'i',10:'j',11:'k',12:'l',13:'m',14:'n',15:'o',16:'p',17:'q',18:'r',19:'s',20:'t',21:'u',22:'v',23:'w',24:'x',25:'y',26:'z',27:'@',28:'1',29:'2',30:'3',31:'4',:32:'5'}
 
 
 
 
 def passw():
 
-	for i in range(1, 29):
-		for j in range(1, 29):
-			for k in range(1, 29):
-				for l in range(1, 29):
-					for m in range(1, 29):
-						for n in range(1, 29):
-							for o in range(1, 29):
-								for p in range(1, 29):
+	for i in range(1, 32):
+		for j in range(1, 32):
+			for k in range(1, 32):
+				for l in range(1, 32):
+					for m in range(1, 32):
+						for n in range(1, 32):
+							for o in range(1, 32):
+								for p in range(1, 32):
 									password = password1[i] + password1[j] + password1[k] + password1[l] + password1[
 										m] + password1[n] + password1[o] + password1[p]
-									#password = 'aman@999'
-									print(password)
+									
+									
 									# establish new connection
 									createNewConnection(name, name, password)
 
